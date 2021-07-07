@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		D6513A082696625F00D90395 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6513A072696625F00D90395 /* AppDelegate.swift */; };
 		D6513A0A2696625F00D90395 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6513A092696625F00D90395 /* SceneDelegate.swift */; };
-		D6513A0C2696625F00D90395 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6513A0B2696625F00D90395 /* ViewController.swift */; };
 		D6513A122696625F00D90395 /* ToDoListGenerics.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D6513A102696625F00D90395 /* ToDoListGenerics.xcdatamodeld */; };
 		D6513A142696626500D90395 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6513A132696626500D90395 /* Assets.xcassets */; };
 		D6513A172696626500D90395 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6513A152696626500D90395 /* LaunchScreen.storyboard */; };
+		D6513A282696662B00D90395 /* FolderListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6513A272696662B00D90395 /* FolderListViewController.swift */; };
+		D6513A312696686300D90395 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6513A302696686300D90395 /* CoreDataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D6513A042696625F00D90395 /* ToDoListGenerics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoListGenerics.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6513A072696625F00D90395 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D6513A092696625F00D90395 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D6513A0B2696625F00D90395 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D6513A112696625F00D90395 /* ToDoListGenerics.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ToDoListGenerics.xcdatamodel; sourceTree = "<group>"; };
 		D6513A132696626500D90395 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D6513A162696626500D90395 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D6513A182696626500D90395 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D6513A272696662B00D90395 /* FolderListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FolderListViewController.swift; sourceTree = SOURCE_ROOT; };
+		D6513A302696686300D90395 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +58,72 @@
 		D6513A062696625F00D90395 /* ToDoListGenerics */ = {
 			isa = PBXGroup;
 			children = (
-				D6513A072696625F00D90395 /* AppDelegate.swift */,
-				D6513A092696625F00D90395 /* SceneDelegate.swift */,
-				D6513A0B2696625F00D90395 /* ViewController.swift */,
-				D6513A132696626500D90395 /* Assets.xcassets */,
-				D6513A152696626500D90395 /* LaunchScreen.storyboard */,
-				D6513A182696626500D90395 /* Info.plist */,
-				D6513A102696625F00D90395 /* ToDoListGenerics.xcdatamodeld */,
+				D6513A2E269666F400D90395 /* ToDoItems */,
+				D6513A2D269666D200D90395 /* GenericClasses */,
+				D6513A2C269666C900D90395 /* Common */,
+				D6513A262696660600D90395 /* ToDoFolder */,
+				D6513A25269665F200D90395 /* Database */,
+				D6513A24269665DD00D90395 /* Storyboards */,
+				D6513A222696655C00D90395 /* AppFiles */,
 			);
 			path = ToDoListGenerics;
+			sourceTree = "<group>";
+		};
+		D6513A222696655C00D90395 /* AppFiles */ = {
+			isa = PBXGroup;
+			children = (
+				D6513A072696625F00D90395 /* AppDelegate.swift */,
+				D6513A092696625F00D90395 /* SceneDelegate.swift */,
+				D6513A132696626500D90395 /* Assets.xcassets */,
+				D6513A182696626500D90395 /* Info.plist */,
+			);
+			path = AppFiles;
+			sourceTree = "<group>";
+		};
+		D6513A24269665DD00D90395 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				D6513A152696626500D90395 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		D6513A25269665F200D90395 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				D6513A102696625F00D90395 /* ToDoListGenerics.xcdatamodeld */,
+				D6513A302696686300D90395 /* CoreDataManager.swift */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
+		D6513A262696660600D90395 /* ToDoFolder */ = {
+			isa = PBXGroup;
+			children = (
+				D6513A272696662B00D90395 /* FolderListViewController.swift */,
+			);
+			path = ToDoFolder;
+			sourceTree = "<group>";
+		};
+		D6513A2C269666C900D90395 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		D6513A2D269666D200D90395 /* GenericClasses */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = GenericClasses;
+			sourceTree = "<group>";
+		};
+		D6513A2E269666F400D90395 /* ToDoItems */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ToDoItems;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,9 +195,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D6513A0C2696625F00D90395 /* ViewController.swift in Sources */,
+				D6513A282696662B00D90395 /* FolderListViewController.swift in Sources */,
 				D6513A082696625F00D90395 /* AppDelegate.swift in Sources */,
 				D6513A0A2696625F00D90395 /* SceneDelegate.swift in Sources */,
+				D6513A312696686300D90395 /* CoreDataManager.swift in Sources */,
 				D6513A122696625F00D90395 /* ToDoListGenerics.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -279,7 +339,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = ToDoListGenerics/Info.plist;
+				INFOPLIST_FILE = ToDoListGenerics/AppFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -297,7 +357,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = ToDoListGenerics/Info.plist;
+				INFOPLIST_FILE = ToDoListGenerics/AppFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
