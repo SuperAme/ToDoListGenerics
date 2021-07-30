@@ -14,6 +14,14 @@
 		D6513A172696626500D90395 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6513A152696626500D90395 /* LaunchScreen.storyboard */; };
 		D6513A282696662B00D90395 /* FolderListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6513A272696662B00D90395 /* FolderListViewController.swift */; };
 		D6513A312696686300D90395 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6513A302696686300D90395 /* CoreDataManager.swift */; };
+		D6513A342697AAFC00D90395 /* CoreDataManager+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6513A332697AAFC00D90395 /* CoreDataManager+Extension.swift */; };
+		D6513A372697ABFA00D90395 /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6513A362697ABFA00D90395 /* DataProvider.swift */; };
+		D6513A3A269CA78100D90395 /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6513A39269CA78100D90395 /* DataSource.swift */; };
+		D6513A3D269CFEBA00D90395 /* GenericTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6513A3C269CFEBA00D90395 /* GenericTableView.swift */; };
+		D68C402926A62C1E005BFB09 /* FolderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D68C402826A62C1E005BFB09 /* FolderTableViewCell.swift */; };
+		D68C402B26A72F96005BFB09 /* AddNewItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D68C402A26A72F95005BFB09 /* AddNewItemViewController.swift */; };
+		D68C402D26A73872005BFB09 /* TodoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D68C402C26A73872005BFB09 /* TodoTableViewCell.swift */; };
+		D68C402F26A73AD8005BFB09 /* TodoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D68C402E26A73AD8005BFB09 /* TodoListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +34,14 @@
 		D6513A182696626500D90395 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D6513A272696662B00D90395 /* FolderListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FolderListViewController.swift; sourceTree = SOURCE_ROOT; };
 		D6513A302696686300D90395 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		D6513A332697AAFC00D90395 /* CoreDataManager+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CoreDataManager+Extension.swift"; sourceTree = "<group>"; };
+		D6513A362697ABFA00D90395 /* DataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DataProvider.swift; path = ../../../../../DataProvider.swift; sourceTree = "<group>"; };
+		D6513A39269CA78100D90395 /* DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
+		D6513A3C269CFEBA00D90395 /* GenericTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericTableView.swift; sourceTree = "<group>"; };
+		D68C402826A62C1E005BFB09 /* FolderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FolderTableViewCell.swift; sourceTree = "<group>"; };
+		D68C402A26A72F95005BFB09 /* AddNewItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewItemViewController.swift; sourceTree = "<group>"; };
+		D68C402C26A73872005BFB09 /* TodoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoTableViewCell.swift; sourceTree = "<group>"; };
+		D68C402E26A73AD8005BFB09 /* TodoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +109,7 @@
 			children = (
 				D6513A102696625F00D90395 /* ToDoListGenerics.xcdatamodeld */,
 				D6513A302696686300D90395 /* CoreDataManager.swift */,
+				D6513A332697AAFC00D90395 /* CoreDataManager+Extension.swift */,
 			);
 			path = Database;
 			sourceTree = "<group>";
@@ -101,6 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				D6513A272696662B00D90395 /* FolderListViewController.swift */,
+				D68C402826A62C1E005BFB09 /* FolderTableViewCell.swift */,
 			);
 			path = ToDoFolder;
 			sourceTree = "<group>";
@@ -108,6 +126,7 @@
 		D6513A2C269666C900D90395 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				D68C402A26A72F95005BFB09 /* AddNewItemViewController.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -115,6 +134,9 @@
 		D6513A2D269666D200D90395 /* GenericClasses */ = {
 			isa = PBXGroup;
 			children = (
+				D6513A362697ABFA00D90395 /* DataProvider.swift */,
+				D6513A39269CA78100D90395 /* DataSource.swift */,
+				D6513A3C269CFEBA00D90395 /* GenericTableView.swift */,
 			);
 			path = GenericClasses;
 			sourceTree = "<group>";
@@ -122,6 +144,8 @@
 		D6513A2E269666F400D90395 /* ToDoItems */ = {
 			isa = PBXGroup;
 			children = (
+				D68C402C26A73872005BFB09 /* TodoTableViewCell.swift */,
+				D68C402E26A73AD8005BFB09 /* TodoListViewController.swift */,
 			);
 			path = ToDoItems;
 			sourceTree = "<group>";
@@ -196,10 +220,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				D6513A282696662B00D90395 /* FolderListViewController.swift in Sources */,
+				D68C402926A62C1E005BFB09 /* FolderTableViewCell.swift in Sources */,
+				D68C402F26A73AD8005BFB09 /* TodoListViewController.swift in Sources */,
 				D6513A082696625F00D90395 /* AppDelegate.swift in Sources */,
+				D68C402D26A73872005BFB09 /* TodoTableViewCell.swift in Sources */,
 				D6513A0A2696625F00D90395 /* SceneDelegate.swift in Sources */,
+				D6513A372697ABFA00D90395 /* DataProvider.swift in Sources */,
 				D6513A312696686300D90395 /* CoreDataManager.swift in Sources */,
+				D6513A342697AAFC00D90395 /* CoreDataManager+Extension.swift in Sources */,
+				D6513A3A269CA78100D90395 /* DataSource.swift in Sources */,
+				D6513A3D269CFEBA00D90395 /* GenericTableView.swift in Sources */,
 				D6513A122696625F00D90395 /* ToDoListGenerics.xcdatamodeld in Sources */,
+				D68C402B26A72F96005BFB09 /* AddNewItemViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
